@@ -1,0 +1,22 @@
+.popup-vote {
+  position: absolute;
+  background: rgba(100, 99, 99, 0.526);
+  backdrop-filter: blur(2px);
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 50vw;
+    height: 50vh;
+  }
+}
