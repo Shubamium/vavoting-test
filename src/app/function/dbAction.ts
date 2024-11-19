@@ -42,8 +42,8 @@ export async function saveVote(
 }
 
 export async function getVote(poll_id: string, until: number) {
-  const connection = await createConnection();
   if (until === -1) return [];
+  const connection = await createConnection();
   let tally = [];
   for (let i = 0; i < until; i++) {
     const res = (await connection.execute(
