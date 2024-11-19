@@ -18,7 +18,7 @@ export default async function Home() {
     return {
       ...poll,
       tally: allTally[index],
-      total: allTally[index].reduce((a, b) => a + b, 0),
+      total: allTally[index].reduce((a: number, b: number) => a + b, 0),
     };
   });
   console.log(allTally);
